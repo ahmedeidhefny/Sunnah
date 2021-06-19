@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        android:layout_margin="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/notiConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/tv_char"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="AD"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_title_ar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-10dp"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:text="البخارى" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-4dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:text="Sahih Bawood" />
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_info_ar"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="start"-->
+                <!--                        android:layout_marginStart="16dp"-->
+                <!--                        android:layout_marginEnd="16dp"-->
+                <!--                        android:fontFamily="@font/amiri_regular"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:padding="2dp"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="16sp"-->
+                <!--                        android:visibility="gone"-->
+                <!--                        tools:text="صحيح البخارى" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_info_en"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="16dp"-->
+                <!--                        android:layout_marginEnd="16dp"-->
+                <!--                        android:fontFamily="@font/amiri_regular"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:padding="2dp"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="14sp"-->
+                <!--                        android:visibility="gone"-->
+                <!--                        tools:text="sahih al-buknari" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_total"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="16dp"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:textSize="12sp"-->
+                <!--                        android:visibility="gone"-->
+                <!--                        tools:text="5" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_data"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginStart="16dp"-->
+                <!--                        android:gravity="start"-->
+                <!--                        android:textSize="12sp"-->
+                <!--                        android:visibility="gone"-->
+                <!--                        tools:text="5" />-->
+
+                <!--                    <View-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="16dp"-->
+                <!--                        android:visibility="gone" />-->
+
+
+                <!--                    <View-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="16dp"-->
+                <!--                        android:visibility="gone" />-->
+
+
+                <!--________________-->
+
+                <!--                    <com.github.ivbaranov.mli.MaterialLetterIcon-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        />-->
+
+                <!--                    app:mli_letter=""-->
+                <!--                    app:mli_letter_size="26"-->
+                <!--                    app:mli_letters_number="1"-->
+                <!--                    app:mli_initials_number="2"-->
+                <!--                    app:mli_initials="false"-->
+                <!--                    app:mli_letter_color="@color/white"-->
+                <!--                    app:mli_shape_color="@color/black"-->
+                <!--                    app:mli_shape_type="circle"-->
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_flag"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@drawable/placeholder_image" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="collections"
+            type="com.is.sunnahapp.data.local.entity.Collections" />
+    </data>
+</layout>

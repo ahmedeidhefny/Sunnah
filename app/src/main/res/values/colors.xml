@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1875d1</color>
+    <color name="colorPrimaryDark">#1568bb</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="light200">#FFEEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="global__accent">#90a4ae</color>
+    <color name="green">#19C514</color>
+    <color name="color_background">#e6e6e6</color>
+
+    <color name="grey_90">#263238</color>
+
+</resources>
